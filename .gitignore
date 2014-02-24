@@ -1,2 +1,11 @@
+# Files and Folders #
+######################
 old
-new/bootstrap-3.1.1-source
+/new/Bootstrap_Website_Attempt/bootstrap-3.1.1-source
+/new/Bootstrap_Website_Attempt/bootstrap-3.1.1-dist
+
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
