@@ -26,36 +26,52 @@ $(document).ready(function(){
 
 
     $(window).scroll(function () {
-        // get current area
+        
         var offsetNames = ["#navItemAbout","#navItemPortfolio","#navItemContact"];
         var counter = 0;
-        var windowsValue = $(window).scrollTop(); 
+        var positionValue = $(document).scrollTop(); 
 
-        while (windowsValue > jQuery(offsetNames[counter]).offset().top){
+        var position = $('li:nth-child(2)').position().top;
+        console.log(position);
+        // get current area
+        while (positionValue < $(offsetNames[counter]).position().top + $(offsetNames[counter]).height()){
             counter = counter +1;
+            console.log("In section ", offsetNames[counter]);
         }
+        console.log("positionValue is ", positionValue);
+        console.log("counter is ", counter);
+        
+        
+        // counter value corrisponds what section of the page we are on
+        // we can use counter as a possition in the offsetNames array
+        // 0 would indicate that we are in the About section
+        // 1 would indicate that we are in the Portfolio section and so on...
 
         var currentActiveElement;
-
-        //get current active area
-        if (jQuery("li.nav-list-item").hasClass("active") && jQuery("li.nav-list-item").hasClass("active"). ){
+        
+        //check to see if a list element exists that has the 'active' class 
+        if (jQuery("li.nav-list-item").hasClass("active") ){
+            // if this element exists, assign it to the currentActiveElement varriable
             currentActiveElement = jQuery("li.nav-list-item").hasClass("active");
-            console.log("active element exists");
+            console.log("active element is ", offsetNames[counter] );
         }
-            
-
-        if currentActiveElement 
-        //compare
-        if (currentActiveElement.is(jQuery(offsetNames[counter]))){
-            console.log("same element active");
-        } else{
-        // if different change current active area    
-            currentActiveElement.removeClass("active");
-            jQuery(offsetNames[counter]).addClass("active");
-        } 
-
         
 
+        // compare the currentActiveElement var to the list element 
+        // whose section we are in
+        if (jQuery(currentActiveElement) == jQuery(offsetNames[counter])){
+            console.log("same element active");
+
+        } else if (currentActiveElement){ 
+                // remove active class
+                jQuery(currentActiveElement).removeClass("active");
+                console.log("removing an active");
+        }
+        jQuery(offsetNames[counter]).addClass("active");
+        console.log("added active class to element:");
+        console.log(jQuery(offsetNames[counter]).attr('id'));
+        
+        
         
         // if($("li.nav-list-item").hasClass("active")){
         //     $("li.nav-list-item").removeClass("active");
