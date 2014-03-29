@@ -1,9 +1,5 @@
-// //a)on click
-// //b)get nav bar list element id
-// //c)check if class is already applied to element
-// //d)change current list element class to not active
-// //e)change new list element class to active
 
+// Change active navigation bar element on click
 $(document).ready(function(){
 //on click
     $("li.nav-list-item").click(function(event){

@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<!--
+Work that is not mine in this project:
+1)Bootstrap
+2)JQuery
+3)Code Drops custom thumbnail grid project
+4)Google Analytics
+-->
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -17,14 +24,18 @@
 
     <!-- Custom styles for this template -->
     <link href="css/starter-template.css" rel="stylesheet">
+    <link href="css/codedrops-thumbnail-grid/default.css"  rel="stylesheet" type="text/css" />
+    <link href="css/codedrops-thumbnail-grid/component.css" rel="stylesheet" type="text/css"/>
 
     <!-- JQuery link -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
     </script>
 
-    <!-- Custom javascript for this template -->
+    <!-- Custom javascript for this template-->
+    <script src="js/codedrops-thumbnail-grid/modernizr.custom.js"></script>
     <script src="js/starter-template.js"></script>
 
+    <!-- Javascript for Google Analytics-->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -38,7 +49,6 @@
   </head>
 
   <body>
-
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -53,6 +63,7 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li id = "navItemAbout" class = "nav-list-item" ><a href="#about">About</a></li>
+            <li id = "navItemProject" class = "nav-list-item" ><a href="#projects">Projects</a></li>
             <li id = "navItemPortfolio" class = "nav-list-item" ><a href="#publications">Publications</a></li>
             <li id = "navItemContact" class = "nav-list-item" ><a href="#contact">Contact</a></li>
           </ul>
@@ -69,6 +80,7 @@
           <br>
           <br>
           <div>
+            <!-- Start about section-->
             <h2><a class="sectionTitles" id="about">About</a></h2>
               <p>I am a graduate student studying at the University of Victoria, under <a href= "http://margaretannestorey.wordpress.com/">Margaret-Anne Storey</a> and <a href= "http://webhome.cs.uvic.ca/~ycoady/">Yvonne Coady</a> in the <a href= "http://thechiselgroup.org/">Computer Human Interaction and Software Engineering Lab</a>. I am also the acting Vice-President for the <a href= "https://wecs.csc.uvic.ca">Women in Engineering and Computer Science</a> club on campus.  
               </p>
@@ -83,20 +95,49 @@
 
               <p>Here you can find papers I have published and my contact information.
               </p>
-
+            <!-- End about section-->
           </div>
           <div>
+            <!-- Start Project Section-->
+            <h2><a class="sectionTitles" id="projects">Projects</a></h2>
+                <div class="main">
+                  <ul id="og-grid" class="og-grid">
+                    <li>
+                      <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="img/codedrops-thumbnail-grid/A.png" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                        <img src="img/codedrops-thumbnail-grid/A.png" alt="img01"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a data-largesrc="img/codedrops-thumbnail-grid/A.png" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+                        <img src="img/codedrops-thumbnail-grid/A.png" alt="img02"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a data-largesrc="img/codedrops-thumbnail-grid/A.png" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+                        <img src="img/codedrops-thumbnail-grid/A.png" alt="img03"/>
+                      </a>
+                    </li>
+                  </ul>
+
+                </div>
+
+            <!-- End Project Section-->
+          </div>
+
+
+          <div>
+            <!-- Start publication section-->
             <h2><a class="sectionTitles" id="publications">Publications</a></h2>
           
             <p><strong>2014</strong>
               <br>
               How Developers Use and Create Video Walkthroughs <br>
-              April 2014,MacLeod, L.
+              April 2014, MacLeod, L.; Bergen, A.; Storey, M. <br>
               Poster Entry at the 2014 Computer Research Association’s Women Graduate Cohort Workshop <em>--forthcoming</em>
               <br>
               <br>
               Reputation on Stack Exchange: Tag You’re It!<br>
-              May 2014, MacLeod, L.
+              May 2014, MacLeod, L. <br>
               The 2014 International Symposium on Mining and Web <em>--forthcoming</em>
               <br>
               <br>
@@ -114,19 +155,24 @@
               Parallel Perspectives: Reverse Engineering for Generation Multi-X <br> November 2012 Bergen, A.; Pucsek, D.; Baldwin, J.; MacLeod, L.; Berg, C.; Salois, M.; Coady, Y.; <br>
               Seventh International Conference on P2P, Parallel, Grid, Cloud and Internet Computing
             </p>
+            <!-- end publication section-->
           </div>
 
           <div>
+            <!-- Start contact section-->
             <h2><a class="sectionTitles" id="contact">Contact</a></h2>
             <br>
-            <!-- icons taken from http://simpleicons.org/ -->
+            
             You can reach me at: lmacleod at uvic dot ca
             <br>
-            <a href = "https://github.com/lmacleod36"><img src="img/github-64-black.png"></a>
-            <a href = "https://ca.linkedin.com/pub/laura-macleod/54/aba/a94/"><img src="img/linkedin-64-black.png"></a>
-            <a href = "https://twitter.com/LauraAnnMacLeod"><img src="img/twitter-64-black.png"></a>
-
-
+            <!-- icons taken from http://simpleicons.org/ -->
+            <a href = "https://github.com/lmacleod36"><img src="img/social_media_images/github-64-black.png"></a>
+            <a href = "https://ca.linkedin.com/pub/laura-macleod/54/aba/a94/"><img src="img/social_media_images/linkedin-64-black.png"></a>
+            <a href = "https://twitter.com/LauraAnnMacLeod"><img src="img/social_media_images/twitter-64-black.png"></a>
+            <!-- End contact section-->
+          </div>
+          <!-- End starter-template class div -->
+        </div>
 
 
 
@@ -138,5 +184,14 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Code drops scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/codedrops-thumbnail-grid/grid.js"></script>
+    <script>
+      $(function() {
+        Grid.init();
+      });
+    </script>
   </body>
 </html>
