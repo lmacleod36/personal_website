@@ -7,6 +7,7 @@
 * Copyright 2011 @louis_remi
 * Licensed under the MIT license.
 */
+// Laura March 29th 2014: Commented out hrefs in order to get rid of link on expanded version
 var $event = $.event,
 $special,
 resizeTimeout;
@@ -191,8 +192,8 @@ var Grid = (function() {
 		support = Modernizr.csstransitions,
 		// default settings
 		settings = {
-			minHeight : 500,
-			speed : 350,
+			minHeight : 50, //changed
+			speed : 150, //changed
 			easing : 'ease'
 		};
 

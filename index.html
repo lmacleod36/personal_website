@@ -3,7 +3,6 @@
 Work that is not mine in this project:
 1)Bootstrap
 2)JQuery
-3)Code Drops custom thumbnail grid project
 4)Google Analytics
 -->
 <html lang="en">
@@ -24,15 +23,13 @@ Work that is not mine in this project:
 
     <!-- Custom styles for this template -->
     <link href="css/starter-template.css" rel="stylesheet">
-    <link href="css/codedrops-thumbnail-grid/default.css"  rel="stylesheet" type="text/css" />
-    <link href="css/codedrops-thumbnail-grid/component.css" rel="stylesheet" type="text/css"/>
 
-    <!-- JQuery link -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-    </script>
+    <!-- JQuery links -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
     <!-- Custom javascript for this template-->
-    <script src="js/codedrops-thumbnail-grid/modernizr.custom.js"></script>
     <script src="js/starter-template.js"></script>
 
     <!-- Javascript for Google Analytics-->
@@ -100,27 +97,47 @@ Work that is not mine in this project:
           <div>
             <!-- Start Project Section-->
             <h2><a class="sectionTitles" id="projects">Projects</a></h2>
-                <div class="main">
-                  <ul id="og-grid" class="og-grid">
-                    <li>
-                      <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="img/codedrops-thumbnail-grid/A.png" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-                        <img src="img/codedrops-thumbnail-grid/A.png" alt="img01"/>
-                      </a>
-                    </li>
-                    <li>
-                      <a data-largesrc="img/codedrops-thumbnail-grid/A.png" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-                        <img src="img/codedrops-thumbnail-grid/A.png" alt="img02"/>
-                      </a>
-                    </li>
-                    <li>
-                      <a data-largesrc="img/codedrops-thumbnail-grid/A.png" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-                        <img src="img/codedrops-thumbnail-grid/A.png" alt="img03"/>
-                      </a>
-                    </li>
-                  </ul>
-
+                <div id="accordion">
+                  <!-- start div accordion-->
+                  <h3>Section 1</h3>
+                  <div>
+                    <p>
+                    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                    </p>
+                  </div>
+                  <h3>Section 2</h3>
+                  <div>
+                    <p>
+                    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                    suscipit faucibus urna.
+                    </p>
+                  </div>
+                  <h3>Section 2</h3>
+                  <div>
+                    <p>
+                    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                    suscipit faucibus urna.
+                    </p>
+                  </div>
+                  <h3>Section 3</h3>
+                  <div>
+                    <p>
+                    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                    suscipit faucibus urna.
+                    </p>
+                  </div>
+                  <br>
+                  <!-- end div accordion-->
                 </div>
-
             <!-- End Project Section-->
           </div>
 
@@ -182,16 +199,7 @@ Work that is not mine in this project:
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Code drops scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/codedrops-thumbnail-grid/grid.js"></script>
-    <script>
-      $(function() {
-        Grid.init();
-      });
-    </script>
   </body>
 </html>

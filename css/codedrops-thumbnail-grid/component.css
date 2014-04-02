@@ -10,7 +10,7 @@
 	display: inline-block;
 	margin: 10px 5px 0 5px;
 	vertical-align: top;
-	height: 250px;
+	height: 100px;	
 }
 
 .og-grid li > a,
@@ -39,7 +39,7 @@
 	position: absolute;
 	background: #ddd;
 	top: auto;
-	left: 0;
+	left: 10%;
 	width: 50%;
 	margin-top: 10px;
 	text-align: left;
@@ -48,7 +48,7 @@
 }
 
 .og-expander-inner {
-	padding: 50px 30px;
+	padding: 30px 30px;
 	height: 100%;
 }
 
@@ -181,7 +181,7 @@
 
 @media screen and (max-width: 830px) {
 
-	.og-expander h3 { font-size: 32px; }
+	.og-expander h3 { font-size: 24px; }
 	.og-expander p { font-size: 13px; }
 	.og-expander a { font-size: 12px; }
 

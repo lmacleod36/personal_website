@@ -14,3 +14,8 @@ $(document).ready(function(){
     });
 
 });
+
+
+$(document).on('ready', function(){
+        $("#accordion").accordion();
+    });
