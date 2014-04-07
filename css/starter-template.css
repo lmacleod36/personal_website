@@ -1,8 +1,7 @@
-body {
-  padding-top: 50px;
-}
 .starter-template {
-  padding: 40px 15px;
+	padding-left: 18%;
+	padding-right: 18%;
+	padding-top: 8%;
   text-align: left;
 }
 @font-face {
@@ -25,3 +24,126 @@ a.sectionTitles{
 li.active{
 	color: red;
 }
+img.profile{
+	width: 150px;
+	float: right;
+
+
+	/* Rounded edges example taken from:
+	http://css-tricks.com/almanac/properties/b/border-radius/
+	*/
+	-webkit-border-radius: 25px; 
+
+  	/* Firefox 1-3.6 */
+  	-moz-border-radius: 25px; 
+  
+	/* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+	border-radius: 25px; 
+
+	/* End rounded edges example
+	*/
+}
+
+
+/* 
+Radial Horizontal Line Example taken from:;
+http://stackoverflow.com/questions/15215556/create-a-beautiful-horizontal-line-with-css-only
+*/
+hr.fancy-line { 
+    border: 0; 
+    height: 1px;
+
+}
+hr.fancy-line:before {
+    top: -0.5em;
+    height: 1em;
+}
+hr.fancy-line:after {
+    content:'';
+    height: 0.5em;
+    top: 1px;
+}
+
+hr.fancy-line:before, hr.fancy-line:after {
+    content: '';
+    position: absolute;
+    width: 80%;
+}
+
+hr.fancy-line, hr.fancy-line:before {
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
+}
+
+body, hr.fancy-line:after {
+    background: #f4f4f4;
+}
+/*End Radial Horizontal Line Example*/ 
+
+
+/*/ Custom CSS for Nav Bar, taken 
+from http://smarchal.com/twbscolor/?bd=e74c3c&bh=c0392b&cd=ecf0f1&ch=ffbbbc
+/*/
+.navbar {
+	background-color: #29b765;
+	border-color: #2dc76e;
+}
+.navbar .navbar-brand {
+	color: #ecf0f1;
+}
+.navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
+	color: #d1ffed;
+}
+.navbar .navbar-text {
+	color: #ecf0f1;
+}
+.navbar .navbar-nav > li > a {
+	color: #ecf0f1;
+}
+.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
+	color: #d1ffed;
+}
+.navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus {
+	color: #d1ffed;
+	background-color: #2dc76e;
+}
+.navbar .navbar-nav > .open > a, .navbar .navbar-nav > .open > a:hover, .navbar .navbar-nav > .open > a:focus {
+	color: #d1ffed;
+	background-color: #2dc76e;
+}
+.navbar .navbar-toggle {
+	border-color: #2dc76e;
+}
+.navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus {
+	background-color: #2dc76e;
+}
+.navbar .navbar-toggle .icon-bar {
+	background-color: #ecf0f1;
+}
+.navbar .navbar-collapse,
+.navbar .navbar-form {
+	border-color: #ecf0f1;
+}
+.navbar .navbar-link {
+	color: #ecf0f1;
+}
+.navbar .navbar-link:hover {
+	color: #d1ffed;
+}
+
+@media (max-width: 767px) {
+	.navbar .navbar-nav .open .dropdown-menu > li > a {
+		color: #ecf0f1;
+	}
+	.navbar .navbar-nav .open .dropdown-menu > li > a:hover, .navbar .navbar-nav .open .dropdown-menu > li > a:focus {
+		color: #d1ffed;
+	}
+	.navbar .navbar-nav .open .dropdown-menu > .active > a, .navbar .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+		color: #d1ffed;
+		background-color: #2dc76e;
+	}
+	.profile{
+		display: none;
+	}
+}
+
+/*/ End copied solution /*/
