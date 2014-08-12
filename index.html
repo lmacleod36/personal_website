@@ -1,39 +1,30 @@
 <!DOCTYPE html>
-<!--
-Work that is not mine in this project:
-1)Bootstrap
-2)JQuery
-4)Google Analytics
-5)Social Media Icons
-Taken from Examples:
--Horizontal Line gradient 
--Profile Picture Border edges
--->
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="A personal website">
+    <meta name="author" content="MacLeod">
     <link rel="shortcut icon" href="img/ico/favicon.ico">
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
 
 
     <title>Laura MacLeod</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Templates -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mainPage.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/starter-template.css" rel="stylesheet">
 
     <!-- JQuery links -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
-    <!-- Custom javascript for this template-->
-    <script src="js/starter-template.js"></script>
+    <!-- Javascript -->
+    <script src="js/mainPage.js"></script>
 
     <!-- Javascript for Google Analytics-->
     <script>
@@ -63,7 +54,7 @@ Taken from Examples:
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li id = "navItemAbout" class = "nav-list-item" ><a href="#about">About</a></li>
-            <li id = "navItemProject" class = "nav-list-item" ><a href="#projects">Projects</a></li>
+            <!-- <li id = "navItemProject" class = "nav-list-item" ><a href="#projects">Projects</a></li> -->
             <li id = "navItemPortfolio" class = "nav-list-item" ><a href="#publications">Publications</a></li>
             <li id = "navItemContact" class = "nav-list-item" ><a href="#contact">Contact</a></li>
           </ul>
@@ -73,87 +64,80 @@ Taken from Examples:
 
     <div class="container">
       <div class="starter-template">
-       <img class="profile" src="img/facebookprofilepicture.jpg"></img>
-        <h1>Laura <br>
-          MacLeod</h1>
-          <br><h2 class="pageTitle">Computer Science Graduate Student</h2>
-          <br>
-          <br>
-          <div>
-            <!-- Start about section-->
-            <h2><a class="sectionTitles" id="about">About</a></h2>
-            <hr class="fancy-line"></hr>
-              <p>I am a graduate student studying at the University of Victoria, under <a href= "http://margaretannestorey.wordpress.com/">Margaret-Anne Storey</a> and <a href= "http://webhome.cs.uvic.ca/~ycoady/">Yvonne Coady</a> in the <a href= "http://thechiselgroup.org/">Computer Human Interaction and Software Engineering Lab</a>. I am also the acting Vice-President for the <a href= "https://wecs.csc.uvic.ca">Women in Engineering and Computer Science</a> club on campus.  
-              </p>
-
-              <p>My thesis focuses on how developers use YouTube; specifically it examines how they share and discover new technologies through video. My main area of research is program comprehension, which is the study of how developers understand programs.
-
-              As a graduate student, I have worked on projects with the Defense Research Department of Canada building program comprehension tools. 
-              </p>
-
-              <p>As a programmer, I was taught in Java and C, but my strongest language is Python. I have extensive experience with Eclipse and the PySide project.
-              </p>
-
-              <p>Here you can find projects I have worked on, papers I have published and my contact information.
-              </p>
-            <!-- End about section-->
-          </div>
-          
-
-
-          <div>
-            <!-- Start publication section-->
-            <h2><a class="sectionTitles" id="publications">Publications</a></h2>
-            <hr class="fancy-line"></hr>
-          
-            <p><strong>2014</strong>
-              <br>
-              <a href="docs/How_Developers_Use2014.pdf">How Developers Use and Create Video Walkthroughs</a> <br>
-              April 2014, MacLeod, L.; Bergen, A.; Storey, M. <br>
-              Poster Entry at the 2014 Computer Research Association’s Women Graduate Cohort Workshop <em>--forthcoming</em>
-              <br>
-              <br>
-              Reputation on Stack Exchange: Tag You’re It!<br>
-              May 2014, MacLeod, L. <br>
-              The 2014 International Symposium on Mining and Web <em>--forthcoming</em>
-              <br>
-              <br>
-            </p>
-            <p><strong>2013</strong>
-              <br>
-              <a href="docs/ICE_Binary_Analysis2013.pdf">ICE: Binary Analysis That You Can See</a> <br>
-              August 2013, Bergen, A.; Pucsek, D.; Baldwin, J.; MacLeod, L.; Berg, C.; Salois, M.; Coady, Y.; <br>
-              2013 IEEE Pacific Rim Conference on Communications, Computers and Signal Processing
-              <br>
-              <br>
-            </p>
-            <p><strong>2012</strong>
-              <br>
-              <a href="docs/Parallel_Perspectives2012.pdf">Parallel Perspectives: Reverse Engineering for Generation Multi-X</a> <br> November 2012 Bergen, A.; Pucsek, D.; Baldwin, J.; MacLeod, L.; Berg, C.; Salois, M.; Coady, Y.; <br>
-              Seventh International Conference on P2P, Parallel, Grid, Cloud and Internet Computing
-            </p>
-            <!-- end publication section-->
-          </div>
-
-          <div>
-            <br>
-            <!-- Start contact section-->
-            <h2><a class="sectionTitles" id="contact">Contact</a></h2>
-            <hr class="fancy-line"></hr>
-
-            You can reach me at: lmacleod at uvic dot ca
-            <br>
-            <!-- icons taken from http://simpleicons.org/ -->
-            <a href = "https://github.com/lmacleod36"><img src="img/social_media_images/github-64-black.png"></a>
-            <a href = "https://ca.linkedin.com/pub/laura-macleod/54/aba/a94/"><img src="img/social_media_images/linkedin-64-black.png"></a>
-            <a href = "https://twitter.com/LauraAnnMacLeod"><img src="img/social_media_images/twitter-64-black.png"></a>
-            <br>
-            <br>
-            <br>
-            <!-- End contact section-->
-          </div>
-          <!-- End starter-template class div -->
+        <div class="pageTitle">
+          <img class="profile" src="img/facebookprofilepicture.jpg"></img>
+          <h1>Laura MacLeod</h1><br>
+          <h2 class="jobTitle">Master's Student/ Software Developer</h2>
         </div>
+
+        <div id='aboutSection'>
+          <!-- Start about section-->
+          <h2><a class="sectionTitles" id="about">About</a></h2>
+
+            <p>Hi there! I am a graduate student studying at the University of Victoria, under <a href= "http://margaretannestorey.wordpress.com/">Dr. Margaret-Anne Storey</a> and <a href= "http://webhome.cs.uvic.ca/~ycoady/">Dr. Yvonne Coady</a> in the <a href= "http://thechiselgroup.org/">Computer Human Interaction and Software Engineering Lab</a>. My research centers around social media and software development. I look at how software developers use different types of social media to support their work (eg. looking up a question on Stack Overflow). 
+            </p>
+
+            <p>I am currently finishing my thesis. It focuses on how developers use YouTube; specifically how and why they create screencasts and share them on YouTube. For this work, I have conducted numerous interviews and watched more screencasts than any sane person should. 
+            </p>
+
+            <!-- <p>
+            On this website you can find projects I have worked on throughout my studies, papers I have published and my contact information.
+            </p>  -->
+
+            <p>
+            On this website you can find papers I have published and my contact information.
+            </p> 
+
+            <p>
+            If you have any questions feel free to email me.
+            </p>
+          <!-- End about section-->
+        </div>
+
+        <div id='publicationSection'>
+          <!-- Start publication section-->
+          <h2><a class="sectionTitles" id="publications">Publications</a></h2>
+
+          <strong>2014</strong>
+          <p><a href="docs/Reputation_On_Stack_Exchange2014.pdf">Reputation on Stack Exchange: Tag You’re It!</a><br>
+            May 2014, MacLeod, L. <br>
+            The 2014 International Symposium on Mining and Web
+          </p>
+          <p><a href="docs/How_Developers_Use2014.pdf">How Developers Use and Create Video Walkthroughs</a> <br>
+            April 2014, MacLeod, L.; Bergen, A.; Storey, M. <br>
+            Poster Entry at the 2014 Computer Research Association’s Women Graduate Cohort Workshop
+          </p>
+          
+          <strong>2013</strong>
+          <p><a href="docs/ICE_Binary_Analysis2013.pdf">ICE: Binary Analysis That You Can See</a> <br>
+          August 2013, Bergen, A.; Pucsek, D.; Baldwin, J.; MacLeod, L.; Berg, C.; Salois, M.; Coady, Y.; <br>
+          The 2013 IEEE Pacific Rim Conference on Communications, Computers and Signal Processing
+          </p>
+    
+          <strong>2012</strong>
+          <p><a href="docs/Parallel_Perspectives2012.pdf">Parallel Perspectives: Reverse Engineering for Generation Multi-X</a> <br> 
+          November 2012 Bergen, A.; Pucsek, D.; Baldwin, J.; MacLeod, L.; Berg, C.; Salois, M.; Coady, Y.; <br>
+          The Seventh International Conference on P2P, Parallel, Grid, Cloud and Internet Computing
+          </p>
+          <!-- end publication section-->
+        </div>
+
+        <div id='contactSection'>
+          <!-- Start contact section-->
+          <h2><a class="sectionTitles" id="contact">Contact</a></h2>
+          <p>You can reach me at: lmacleod at uvic dot ca
+          </p>
+
+          <!-- icons taken from http://simpleicons.org/ -->
+          <p>
+          <a href = "https://github.com/lmacleod36"><img src="img/social_media_images/github-64-black.png"></a>
+          <a href = "https://ca.linkedin.com/pub/laura-macleod/54/aba/a94/"><img src="img/social_media_images/linkedin-64-black.png"></a>
+          <a href = "https://twitter.com/LauraAnnMacLeod"><img src="img/social_media_images/twitter-64-black.png"></a>
+          </p>
+          <!-- End contact section-->
+        </div>
+      <!-- End starter-template class div -->
+      </div>
 
 
 
