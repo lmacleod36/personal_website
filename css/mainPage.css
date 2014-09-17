@@ -1,0 +1,53 @@
+a.sectionTitles{
+	text-decoration: none;
+	color: #333333;
+	margin-bottom: 10%;
+	text-align: center;
+}
+.starter-template {
+	padding-left: 18%;
+	padding-right: 18%;
+	padding-top: 8%;
+  	text-align: left;
+}
+.pageTitle{
+	min-height: 180px;
+}
+@font-face {
+    font-family: 'Oswald', sans-serif;
+}
+h1{
+	font-family: 'Oswald';
+	font-size: 50px;
+	display: inline;
+	text-align: bottom;
+    
+}
+h2.jobTitle{
+	color: gray;
+	display: inline;
+
+}
+img.profile{
+	width: 150px;
+	float: right;
+}
+
+li.active{
+	color: red;
+}
+
+@media (max-width: 767px) {
+	h2.jobTitle{
+	font-size: 1.5em;
+	}
+	.profile{
+		display: none;
+	}
+	.pageTitle{
+		min-height: 0;
+	}	
+	.starter-template {
+		padding-top: 18%;
+	}
+}
