@@ -4,9 +4,14 @@ old
 /new/Bootstrap_Website_Attempt/bootstrap-3.1.1-source
 /new/Bootstrap_Website_Attempt/bootstrap-3.1.1-dist
 /new/Bootstrap_Website_Attempt/zips
+.DS_Store
+<<<<<<< HEAD
+
+# OS generated files #
+=======
 /website_Content_draft.rtf
 
 # OS generated files # 
+>>>>>>> gh-pages
 ######################
 .DS_Store
-.DS_Store?
