@@ -15,7 +15,7 @@ class AppNavbar extends React.Component<any, any> {
         super(props);
         this.toggleNavbar = this.toggleNavbar.bind(this);
         this.state = {
-            collapsed: true
+            collapsed: false
         };
     }
 
@@ -34,10 +34,10 @@ class AppNavbar extends React.Component<any, any> {
                 light
             >
                 <NavbarBrand href="/">Laura</NavbarBrand>
-                <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+                <NavbarToggler onClick={this.toggleNavbar}/>
                 <Collapse isOpen={!this.state.collapsed} navbar>
-                    <Nav className="ml-auto" navbar>
-                        <NavItem className="active">
+                    <Nav className="navbar-left" navbar>
+                        <NavItem>
                             <NavLink href="/#About">About</NavLink>
                         </NavItem>
                         <NavItem>

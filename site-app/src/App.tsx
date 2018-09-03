@@ -20,7 +20,7 @@ class App extends React.Component {
           <AppNavbar />
           <img src="profile_round.png" className="img-profile" alt="profile picture" />
           <h1>Laura MacLeod</h1>
-          <p className="text-muted">Program Manager</p>
+          <div className="text-muted">Program Manager</div>
         </Jumbotron>
 
         <div id="About">
