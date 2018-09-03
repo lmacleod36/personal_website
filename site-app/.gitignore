@@ -1,14 +1,4 @@
-# Files and Folders #
-######################
-old
-/new/Bootstrap_Website_Attempt/*
-.DS_Store
-/website_Content_draft.rtf
-
-# OS generated files # 
-######################
-.DS_Store
-
+# See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
 /node_modules
