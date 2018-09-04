@@ -15,7 +15,7 @@ class AppNavbar extends React.Component<any, any> {
         super(props);
         this.toggleNavbar = this.toggleNavbar.bind(this);
         this.state = {
-            collapsed: false
+            collapsed: true
         };
     }
 

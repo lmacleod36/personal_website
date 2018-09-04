@@ -1,17 +1,18 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import * as React from 'react';
-import * as ReactMarkdown from 'react-markdown';
+// import * as ReactMarkdown from 'react-markdown';
 import { Jumbotron } from 'reactstrap';
 import './App.css';
 import AppNavbar from './AppNavbar';
 import './bootstrap.yeti.css';
-import * as MarkdownContent from './markdown_content';
+// import * as MarkdownContent from './markdown_content';
+
 
 class App extends React.Component {
 
-  private about = MarkdownContent.AboutContent;
-  private publications = MarkdownContent.PublicationsContent;
-  private resume = MarkdownContent.ResumeContent;
+  // private about = MarkdownContent.AboutContent;
+  // private publications = MarkdownContent.PublicationsContent;
+  // private resume = MarkdownContent.ResumeContent;
 
   public render() {
     return (
@@ -24,16 +25,19 @@ class App extends React.Component {
         </Jumbotron>
 
         <div id="About">
-          <ReactMarkdown source={this.about} />
+          {/* <ReactMarkdown source={this.about} /> */}
+          <p>Foo</p>
         </div>
         <div id="Publications">
-          <ReactMarkdown
+          {/* <ReactMarkdown
             source={this.publications}
-            className="table-hover"
-          />
+            className="publication-contents"
+          /> */}
+          <p>Foo</p>
         </div>
         <div id="Resume">
-          <ReactMarkdown source={this.resume} />
+          {/* <ReactMarkdown source={this.resume} /> */}
+          <p>Foo</p>
         </div>
       </div>
     );
