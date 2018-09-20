@@ -1,0 +1,75 @@
+#resumeTable {
+  width: 85%;
+  margin: auto;
+  padding: 1rem 1rem;
+}
+
+.App-logo {
+  height: 80px;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.img-profile{
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  padding: 1em;
+}
+
+.navbar-light .navbar-brand{
+  padding-left: 1rem;
+  padding-top: 1rem;
+  color: white;
+}
+
+div #About, div #Publications, div #Resume, div #Contact  {
+  width: 75%;
+  margin: auto;
+  text-align: left;
+  padding: 1rem 1rem;
+}
+
+div .App-header{
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  text-align: center;
+}
+
+li .nav{
+  text-align: left;
+}
+
+p .pub-title{
+  font-size: 1rem;
+}
+
+pub-subtitle{
+  font-size: .5rem;
+}
+
+i {
+  align-content: center;
+  color: grey;
+  padding: .5rem;
+  font-size: 3em;
+}
+
+@media (max-width: 576px) {
+  .img-profile{
+    max-width: 100px;
+  }
+    .resumeTable {
+      width: 100%;
+  }
+    #About {
+      width: 100%;
+  }
+}
