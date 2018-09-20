@@ -46,6 +46,9 @@ class AppNavbar extends React.Component<any, any> {
                         <NavItem>
                             <NavLink href="/#Resume">Resume</NavLink>
                         </NavItem>
+                        <NavItem>
+                            <NavLink href="/#Contact">Contact</NavLink>
+                        </NavItem>
                     </Nav>
                 </Collapse>
             </Navbar>
